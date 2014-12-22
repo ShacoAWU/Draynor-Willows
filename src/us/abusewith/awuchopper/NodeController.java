@@ -69,10 +69,7 @@ public class NodeController extends Script {
             us.abusewith.awuchopper.utils.Paint.drawText("XP Gained: " + Statistics.getInstance().xpGained(), 16, 363 + 45, Color.RED, g);
             us.abusewith.awuchopper.utils.Paint.drawText("Bird Nests: " + Statistics.getInstance().getBirdNests(), 16, 363 + 60, Color.RED, g);
             us.abusewith.awuchopper.utils.Paint.drawText("Willow Logs: " + Statistics.getInstance().getWillowLogs(), 16, 363 + 75, Color.RED, g);
-
-            us.abusewith.awuchopper.utils.Paint.drawXPBar(16, 363 + 85,
-                    Statistics.getInstance().getXPGoal(), Statistics.getInstance().getCurrentXP(), Statistics.getInstance().timeTillNextLvl(), Statistics.getInstance().getCurrentLevel(), g);
-
+            
             g.setColor(Color.CYAN);
             RS2Object tree = chop.getCurrentTarget();
             if (tree.exists()) {
